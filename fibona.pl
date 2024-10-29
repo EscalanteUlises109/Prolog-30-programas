@@ -1,20 +1,9 @@
-%% Determinar si el numero es par.
+%% Fibonacci.
 %% Escalante Hernandez Kevin Ulises 21211937
 %% Programación Lógica y Funcional
 %% Maestro: Rene Solis Reyes
-/*
-def fibonacci(n):
-    if n == 0:  # Caso base
-        return 0
-    elif n == 1:  # Caso base
-        return 1
-    else:
-        # Caso recursivo: el n-�simo n�mero es la suma de los dos anteriores
-        return fibonacci(n - 1) + fibonacci(n - 2)
-/*
 
-% Caso base: el primer número de Fibonacci es 0, el segundo
-% es 1.
+% Caso base: el primer número de Fibonacci es 0, el segundo es 1.
 fibonacci(0, 0).
 fibonacci(1, 1).
 

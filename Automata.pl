@@ -1,49 +1,8 @@
 %% Programa dirigido a aut√≥matas 
-%% Escalante Hernandez Kevin Ulises 21211937
+%% Escalante Hern√°ndez Kevin Ulises 21211937
 %% Programaci√≥n L√≥gica y Funcional
-%% Maestro: Rene Solis Reyes
+%% Maestro: Ren√© Solis Reyes
 
-/*
-def delta(estado_actual, simbolo):
-    transiciones = {
-        (0, 'a'): [0, 1],
-        (1, 'a'): [1, 2],
-        (2, 'a'): [2]
-    }
-    return transiciones.get((estado_actual, simbolo), [])
-
-# Estado inicial
-def inicio():
-    return 0
-
-# VerificaciÛn de estado final
-def final(estado):
-    return estado == 0
-
-# FunciÛn para manejar la transiciÛn
-def transicion(estado_actual, lista):
-    if lista:  # Si la lista no est· vacÌa
-        simbolo = lista[0]
-        resto = lista[1:]
-        siguientes_estados = delta(estado_actual, simbolo)
-
-        for siguiente_estado in siguientes_estados:
-            print(f"{estado_actual} -> {lista}")
-            if transicion(siguiente_estado, resto):
-                return True
-        return False
-    else:  # Caso base: lista vacÌa, verificar si es un estado final
-        if final(estado_actual):
-            print(f"{estado_actual} -> []")
-            return True
-        else:
-            return False
-
-# FunciÛn principal para iniciar el autÛmata
-def parse(lista):
-    estado_inicial = inicio()
-    return transicion(estado_inicial, lista)
-/*
 % El predicado parse recibe una lista de transiciones y verifica si es aceptada por el aut√≥mata.
 parse(L) :- 
     inicio(S),            % Se obtiene el estado inicial
@@ -70,15 +29,4 @@ transicion(X, []) :-
 % Definici√≥n de las transiciones (delta): para cada par (estado actual, s√≠mbolo), define el siguiente estado.
 delta(0, a, 1).
 delta(0, a, 0).
-delta(1, a, 1).
-delta(1, a, 2).
-delta(2, a, 2).
-delta(2, a, 2).
-
-% Estado inicial del aut√≥mata.
-inicio(0).
-
-% Definici√≥n de los estados finales.
-final(0).  
-
-
+delta(1,
